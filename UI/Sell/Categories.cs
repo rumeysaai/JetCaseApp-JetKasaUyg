@@ -16,12 +16,18 @@ namespace UI.Sell
     public partial class Categories : Form
     {
         List<Product> order;
+        public Employee employee;
         public Categories()
         {
             InitializeComponent();
             order = new List<Product>();
         }
-
+        public Categories(Employee emm)
+        {
+            InitializeComponent();
+            order = new List<Product>();
+            employee = emm;
+        }
         public Categories(List<Product> _order)
         {
             InitializeComponent();
@@ -76,8 +82,8 @@ namespace UI.Sell
 
         private void button1_Click(object sender, EventArgs e) // back button
         {
-            LOGIN lg = new LOGIN();
-            lg.Show();
+            Action a = new Action(employee);
+            a.Show();
             this.Hide();
         }
 

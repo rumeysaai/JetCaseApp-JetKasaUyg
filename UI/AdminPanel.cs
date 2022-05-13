@@ -72,7 +72,6 @@ namespace UI
             or5.Width = 150;
             #endregion
 
-
             #region Combobox foreach
             foreach (var item in ctm.ListBll())
             {
@@ -347,7 +346,7 @@ namespace UI
 
         private void button1_Click(object sender, EventArgs e)// back button
         {
-            var em = eml.ListBll().FirstOrDefault();
+            var em = eml.ListBll().FirstOrDefault(a=>a.IsManager==true);
             Action act = new Action(em);
             act.Show();
             this.Hide();

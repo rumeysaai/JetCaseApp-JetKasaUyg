@@ -41,9 +41,17 @@ namespace UI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Categories ct = new Categories();
+            Categories ct = new Categories(employee);
             ct.Show();
             this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e) //Log out button
+        {
+            LOGIN lg = new LOGIN();
+            lg.Show();
+            this.Hide();
+
         }
     }
 }

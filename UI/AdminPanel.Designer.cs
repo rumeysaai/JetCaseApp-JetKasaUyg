@@ -1094,7 +1094,6 @@
             this.monthCalendar1.MaxSelectionCount = 1;
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 0;
-
             // 
             // dataGridView1
             // 
@@ -1125,7 +1124,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.tabControl1);
             this.Name = "AdminPanel";
-            this.Text = "AdminPanel";
+            this.Text = "ADMIN PANEL";
             this.Load += new System.EventHandler(this.AdminPanel_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);

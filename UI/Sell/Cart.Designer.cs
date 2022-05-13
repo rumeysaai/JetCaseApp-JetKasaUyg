@@ -172,7 +172,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Cart";
-            this.Text = "Cart";
+            this.Text = "CART";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Cart_Load);
             this.ResumeLayout(false);
